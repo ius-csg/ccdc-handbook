@@ -10,5 +10,5 @@ deploy:
   on:
     branch: master
 before_script:
-- pip install mkdocs -y
+- pip install mkdocs
 script: mkdocs build
