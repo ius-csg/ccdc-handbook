@@ -1,10 +1,18 @@
 # CCDC Handbook
 
-Here lies all of the documentation to win CCDC.
+##### Here lies all of the documentation to win CCDC.
 
-## Things to know how to do on your spesfic box
+## Next Practice Day
 
-#### These should be the first things in the handbook for tasks
+Wednesday December 12th at 5:30pm. in 111A.
+
+## Current Homework
+
+- Get a Virtual Machine of your OS.
+- Read -- https://wiki.archlinux.org/
+       -- https://www.digitalocean.com/docs/
+
+## Things to know how to do on your box
 
 #### Know how to get System information 
 - What is your system/name?
