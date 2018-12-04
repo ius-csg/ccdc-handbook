@@ -23,3 +23,6 @@ In general, the syntax is `ufw allow|deny|reject in|out port|app/tcp|udp`
 To list current rules: `ufw status verbose`
 
 To deny an IP or range to all ports: `ufw deny from IP/CIDR`
+
+See also:
+[ArchWiki](https://wiki.archlinux.org/index.php/Uncomplicated_Firewall)
