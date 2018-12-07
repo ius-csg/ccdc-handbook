@@ -48,6 +48,13 @@ By default, rules are not preserved on system reboot.
 See also:
 [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-14-04)
 
+#### Whowatch
+Whowatch is a realtime user and process monitor. It interactivly shows the output of the `w` command, and allows you to kill the users login and processes from the TUI.
+
+To launch, use the command `whowatch`. While in the TUI, press `s` to view system info, or `t` to view the process tree.
+
+See also: [TechMint](https://www.tecmint.com/whowatch-monitor-linux-users-and-processes-in-real-time/)
+
 ### Gathering information 
 
 #### User information 
@@ -72,7 +79,3 @@ Other user info commands:
 
 ### Process management 
 
-#### Cron
-Cron is a simple time based job scheduler. Cron configuation files (crontabs) can be configured for the system, and for indiviual users. User crontabs are usually located at `/var/spool/cron/crontab`. The position of system crontabs varies, but can usually be found under `/etc`.
-
-See also: [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-on-a-vps)
