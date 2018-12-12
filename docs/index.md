@@ -55,6 +55,7 @@ This list is in order of importance
 
 * Ask the status of everyone's last assignment
 * Discuss how to edit the handbook
+* Discuss possible use of ESXI virtualization
 * Discuss [How to Win CCDC](http://www.cs.mercer.edu/courses/david%20cozart/Cyber%20Defense/How%20to%20win%20CCDC.pdf)
 * Configure boxes at IUS
 
