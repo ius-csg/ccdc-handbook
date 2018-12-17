@@ -76,6 +76,13 @@ Other user info commands:
 
 #### Network
 
+To see socket statistics on your machine, use the `ss` command. 
+Options of intrest:
+* `ss -lp` - Shows all listening ports and the process listening
+* `ss -t` Show all TCP sockets
+
 
 ### Process management 
+* `top` - List running processes, or tasks
+* `pkill <name>` - Sends SIGTERM to the specified process, matching the specified name. SIGTERM is a request for a graceful termination. 
 
