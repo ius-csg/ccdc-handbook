@@ -15,12 +15,10 @@ The command-line tool `postconf` is usually used to modify the `master.cf` file 
 ### Service management 
 Postfix seems to do its own service management using the `postfix` command. 
 
-### Hardening and CVEs
+### Hardening and DSAs
 Instructions for CHROOT jail.
 
-* CVE1
-* CVE2
-* CVE3
+[Debian Security Advisories for Postfix](https://security-tracker.debian.org/tracker/source-package/postfix)
 
 ### Links
 * https://linux-audit.com/postfix-hardening-guide-for-security-and-privacy/
@@ -28,12 +26,12 @@ Instructions for CHROOT jail.
 ## Dovecot
 Dovecot config files are stored in `/etc/dovecot/dovecot.conf` and `/etc/dovecot/conf.d/*`
 
-### Hardening and CVEs
+### Hardening and DSAs
 Instructions for CHROOT jail
 
 Don't put the `dovecot` user in the mail group! [Info](https://wiki1.dovecot.org/VirtualUsers)
 
-* [All known holes in Dovecot](https://www.dovecot.org/security.html)
+* [Debian Security Advisories for Dovecot](https://security-tracker.debian.org/tracker/source-package/dovecot)
 * [Fail2Ban Directions](https://wiki1.dovecot.org/HowTo/Fail2Ban)
 
 ## Users
