@@ -2,9 +2,10 @@
 
 The Debian email server is likely to be running the Postfix MTA (Mail Transfer Agent) for SMTP. This is usually done with TCP port 25 and TCP port 465. 
 
-The Dovecot IMAP and POP3 server is also likely to be running, which allows mail retreval from a server. IMAP usually uses TCP 143 for unsecure connections, and 993 for IMAP over SSL. POP3 uses TCP 110 for unsecure connections, and TCP 995 for POP3 over SSL/TLS.
+The Dovecot IMAP and POP3 server also could be running, which allows mail retreval from a server. IMAP usually uses TCP 143 for unsecure connections, and 993 for IMAP over SSL. POP3 uses TCP 110 for unsecure connections, and TCP 995 for POP3 over SSL/TLS.
 
-An unknown web interface is also likely. 
+The 2018 MWCCDC team packet stated that only a SMTP service was essential, meaning that IMAP and POP3 were not avalible. 
+
 
 ## Postfix
 Postfix has literally hundreds of config options. These options are usually stored in the `/etc/postfix` directory. The `main.cf` files contains config options, and `master.cf` which specifies what services it should run. 
