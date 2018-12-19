@@ -13,3 +13,17 @@
 
 * [Linux Handbook](http://www.cs.mercer.edu/courses/David%20Cozart/IST%20301/Cyber%20Defense%20Spring%202017/Hardening%20Directives/LinuxGeneralDocumentation-Adams.pdf)
 * [CentOs guide](https://henpeebin.com/kevin/ccdc-2018/state/centos-first-15.pdf)
+
+
+## Resources from brandon
+
+* [simple-windows-batch-scripting-intrusion-discovery](https://www.sans.org/reading-room/whitepapers/auditing/simple-windows-batch-scripting-intrusion-discovery-33193)
+* [ID-Windows](https://www.sans.org/media/score/checklists/ID-Windows.pdf)
+* [cheat-sheets](https://www.malwarearchaeology.com/cheat-sheets/)
+* [nsa-windows-event](https://cryptome.org/2014/01/nsa-windows-event.pdf_
+
+
+* [ATA Playbook](../assets/brandon/ATA%20Playbook.pdf)
+* [CCDC Writeup](../assets/brandon/CCDC%20Writeup.docx)
+* [Justin Schwarz CCDC Write up](../assets/brandon/Justin%20Schwarz%20CCDC%20Write%20up.docx)
+* [ccdcreview_evans](../assets/brandon/ccdcreview_evans.docx)
