@@ -5,11 +5,9 @@
 * [Team Packet](http://brazil.minnesota.edu/ccdc/ccdc/2017MWCCDCQTeamPack.pdf)
 * [How to Win CCDC](http://www.cs.mercer.edu/courses/david%20cozart/Cyber%20Defense/How%20to%20win%20CCDC.pdf)
 * [How to Win CCDC - Medium Article](https://medium.com/@malcomvetter/how-to-win-at-ccdc-b355e309a05c)
-
-## General Resources
-
 * [Resources from competition website](http://cssia.org/cssia-resources.cfm)
 * [Our competitors - Tech Cyber Warriors](https://techcyberwarriors.org)
+* [A Red Teamer's GitHub repo for CCDC stuff](https://github.com/bluscreenofjeff/CCDC-Scripts)
 
 ## Linux
 
