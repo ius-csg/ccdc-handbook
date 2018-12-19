@@ -20,7 +20,7 @@
 * [simple-windows-batch-scripting-intrusion-discovery](https://www.sans.org/reading-room/whitepapers/auditing/simple-windows-batch-scripting-intrusion-discovery-33193)
 * [ID-Windows](https://www.sans.org/media/score/checklists/ID-Windows.pdf)
 * [cheat-sheets](https://www.malwarearchaeology.com/cheat-sheets/)
-* [nsa-windows-event](https://cryptome.org/2014/01/nsa-windows-event.pdf_
+* [nsa-windows-event](https://cryptome.org/2014/01/nsa-windows-event.pdf)
 
 
 * [ATA Playbook](../assets/brandon/ATA%20Playbook.pdf)
