@@ -41,6 +41,15 @@ Users are likely being pulled over LDAP from Matthew's Windows AD machine.
 ## DNS
 Mail servers usually require special A and MX records. 
 
+## APT
+The mirrorlist for Debian is likely out-of-date. An updated list for Debian 7 should look something like this:
+```
+deb http://ftp.tw.debian.org/debian/ weezy main
+deb http://security.debian.org/ weezy/updates main
+deb http://ftp.tw.debian.org/debian/ weezy-updates main
+```
+Then, install/update the `debian-keyring` and `debian-archive-keyring` packages.
+
 ## Resources 
 * https://wiki.archlinux.org/index.php/Virtual_user_mail_system_with_Postfix,_Dovecot_and_Roundcube
 * https://www.digitalocean.com/community/tutorials/how-to-set-up-a-postfix-e-mail-server-with-dovecot
