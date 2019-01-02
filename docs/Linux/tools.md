@@ -3,6 +3,29 @@
 
 ### Defence 
 
+#### IPtables
+IPtables is the Linux kernel's built in firewall. While more complex, it offers more features than a front-end and is found on all Linux systems. Please try to use UFW, detailed in the above section, if possible.
+
+To view current IPtables rules: `iptables -nvL`
+
+To give an example of output information, `Chain INPUT (policy ACCEPT 0 packets, 0 bytes)`
+indicates that by default, all INPUT data (incoming) will be ACCEPTed. 
+
+To change the Chain default: `iptables -P <CHAIN> <ACCEPT|REJECT|DROP>`
+
+To allow SSH traffic over TCP port 22: `iptables -A INPUT -p tcp --dport 22 -j ACCEPT`
+
+By default, rules are not preserved on system reboot.
+
+See also:
+[DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-14-04)
+
+#### Lynis 
+
+Lynis is a Linux security auditing tool which scans the entire system and some running processes and reccomends specific hardening. To use, [download from GitHub](https://github.com/CISOfy/Lynis) and run `./lynis audit system`. A long list of suggestions and warnings will be output.
+
+A custom auditing profile can be found in the scripts repo, but is not required.
+
 #### RKhunter
 
 RKhunter is a Linux rootkit and backdoor scanner avalible in most repos. It checks for known backdoors, wrong file permissions, and checksums some binaries.
@@ -31,24 +54,8 @@ To deny an IP or range to all ports: `ufw deny from IP/CIDR`
 See also:
 [ArchWiki](https://wiki.archlinux.org/index.php/Uncomplicated_Firewall)
 
-#### IPtables
-IPtables is the Linux kernel's built in firewall. While more complex, it offers more features than a front-end and is found on all Linux systems. Please try to use UFW, detailed in the above section, if possible.
-
-To view current IPtables rules: `iptables -nvL`
-
-To give an example of output information, `Chain INPUT (policy ACCEPT 0 packets, 0 bytes)`
-indicates that by default, all INPUT data (incoming) will be ACCEPTed. 
-
-To change the Chain default: `iptables -P <CHAIN> <ACCEPT|REJECT|DROP>`
-
-To allow SSH traffic over TCP port 22: `iptables -A INPUT -p tcp --dport 22 -j ACCEPT`
-
-By default, rules are not preserved on system reboot.
-
-See also:
-[DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-14-04)
-
 #### Whowatch
+
 Whowatch is a realtime user and process monitor. It interactivly shows the output of the `w` command, and allows you to kill the users login and processes from the TUI.
 
 To launch, use the command `whowatch`. While in the TUI, press `s` to view system info, or `t` to view the process tree.
@@ -78,6 +85,7 @@ Other user info commands:
 
 To see socket statistics on your machine, use the `ss` command. 
 Options of intrest:
+
 * `ss -lp` - Shows all listening ports and the process listening
 * `ss -t` Show all TCP sockets
 
