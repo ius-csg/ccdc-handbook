@@ -7,3 +7,8 @@ See also: [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to
 
 
 ### SystemD - Timers 
+
+
+### Apache 
+
+* [mod-security](https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_security-with-apache-on-debian-ubuntu) - sql injection defense
