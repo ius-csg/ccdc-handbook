@@ -17,3 +17,4 @@ See also: [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to
 ### PHP
 
 * [PHP Hardening](https://www.owasp.org/index.php/PHP_Configuration_Cheat_Sheet) - disable command line execution functions
+* [Patching PHP vulnerabilities](https://suhosin.org/stories/index.html)
