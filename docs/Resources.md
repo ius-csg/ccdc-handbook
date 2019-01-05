@@ -8,7 +8,7 @@
 * [Resources from competition website](http://cssia.org/cssia-resources.cfm)
 * [Our competitors - Tech Cyber Warriors](https://techcyberwarriors.org)
 * [A Red Teamer's GitHub repo for CCDC stuff](https://github.com/bluscreenofjeff/CCDC-Scripts)
-
+* [OSSEC](https://www.ossec.net)
 ## Linux
 
 * [Linux Handbook](http://www.cs.mercer.edu/courses/David%20Cozart/IST%20301/Cyber%20Defense%20Spring%202017/Hardening%20Directives/LinuxGeneralDocumentation-Adams.pdf)
