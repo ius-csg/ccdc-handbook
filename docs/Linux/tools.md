@@ -1,10 +1,29 @@
 
-## Linux Tools
+# Linux Tools
 
-### Defence 
+## Firewall 
 
-#### IPtables
-IPtables is the Linux kernel's built in firewall. While more complex, it offers more features than a front-end and is found on all Linux systems. Please try to use UFW, detailed in the above section, if possible.
+#### UFW
+UFW (Uncomplicated FireWall) is a simple wrapper for the Linux kernel's iptables firewall. 
+To enable the firewall: `ufw enable` **DANGER: By default, this will block ALL incoming traffic
+ unless otherwise configured!**
+
+To allow SSH: `ufw allow ssh` OR `ufw allow in 22/tcp`
+
+In general, the syntax is `ufw allow|deny|reject in|out port|app/tcp|udp`
+
+To list current rules: `ufw status verbose`
+
+To deny an IP or range to all ports: `ufw deny from IP/CIDR`
+
+See also:
+[ArchWiki](https://wiki.archlinux.org/index.php/Uncomplicated_Firewall)
+
+### IPtables
+
+IPtables is the Linux kernel's built in firewall. While more complex, it offers more 
+features than a front-end and is found on all Linux systems. Please try to use UFW, 
+detailed in the above section, if possible.
 
 To view current IPtables rules: `iptables -nvL`
 
@@ -20,13 +39,15 @@ By default, rules are not preserved on system reboot.
 See also:
 [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-14-04)
 
-#### Lynis 
+## Security
+
+### Lynis 
 
 Lynis is a Linux security auditing tool which scans the entire system and some running processes and reccomends specific hardening. To use, [download from GitHub](https://github.com/CISOfy/Lynis) and run `./lynis audit system`. A long list of suggestions and warnings will be output.
 
 A custom auditing profile can be found in the scripts repo, but is not required.
 
-#### RKhunter
+### RKhunter
 
 RKhunter is a Linux rootkit and backdoor scanner avalible in most repos. It checks for known backdoors, wrong file permissions, and checksums some binaries.
 
@@ -39,22 +60,10 @@ See also:
 
 * [SUSE Wiki](https://en.opensuse.org/Rootkit_Hunter)
 
-#### UFW
-UFW (Uncomplicated FireWall) is a simple frontend to the Linux kernel's iptables firewall. 
-To enable the firewall: `ufw enable` **DANGER: By default, this will block ALL incoming traffic unless otherwise configured!**
 
-To allow SSH: `ufw allow ssh` OR `ufw allow in 22/tcp`
+## User 
 
-In general, the syntax is `ufw allow|deny|reject in|out port|app/tcp|udp`
-
-To list current rules: `ufw status verbose`
-
-To deny an IP or range to all ports: `ufw deny from IP/CIDR`
-
-See also:
-[ArchWiki](https://wiki.archlinux.org/index.php/Uncomplicated_Firewall)
-
-#### Whowatch
+### Whowatch
 
 Whowatch is a realtime user and process monitor. It interactivly shows the output of the `w` command, and allows you to kill the users login and processes from the TUI.
 
@@ -62,9 +71,8 @@ To launch, use the command `whowatch`. While in the TUI, press `s` to view syste
 
 See also: [TechMint](https://www.tecmint.com/whowatch-monitor-linux-users-and-processes-in-real-time/)
 
-### Gathering information 
 
-#### User information 
+### User information 
 
 To see all logged in users, from where, and what they are doing, use the `w` command.
 
@@ -80,6 +88,9 @@ Other user info commands:
 
 * `last` - Displays login log for the system.
 * `lastb` - Shows unsuccessful logins for the system.
+
+
+## System
 
 #### Network
 
