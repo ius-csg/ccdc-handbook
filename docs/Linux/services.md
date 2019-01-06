@@ -3,11 +3,6 @@ Cron is a simple time based job scheduler. Cron configuation files (crontabs) ca
 
 See also: [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-on-a-vps)
 
-### SystemD - Services 
-
-
-### SystemD - Timers 
-
 
 ### Apache 
 
