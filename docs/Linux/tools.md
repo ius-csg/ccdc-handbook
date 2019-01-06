@@ -92,8 +92,61 @@ Other user info commands:
 
 ## System
 
-#### Network
+### Cron
 
+The cron is a way to run programs on an interval. The cron can be configured for each user on the system.
+
+Lets list the cron of every user in the system.
+```bash 
+for user in $(sudo cut -f1 -d: /etc/passwd); do sudo crontab -u $user -l && echo ^$user; done
+```
+
+For a default Install there is no crontabs set up. If there is any added it is because of two reasons:
+
+* It's there for an application to function correctly
+
+Or
+
+*  It's malicious intent.
+
+
+If it's malicious intent then we should remove it from that user.
+
+type `crontab -u [the-user-name] -e`. This will put you into a vim editor. It might be unfamiliar at first.
+
+[read about vim to know how to edit this text file](#vim)
+
+### Network
+
+#### Interfaces
+
+type `ifconfig -a` to show show all interfaces and their ip address
+
+```
+eth0      Link encap:Ethernet  HWaddr 00:0C:29:ED:4F:17
+          inet addr:192.168.5.28  Bcast:192.168.5.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:434745 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:8451 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:73297381 (69.9 MiB)  TX bytes:706961 (690.3 KiB)
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:16436  Metric:1
+          RX packets:608 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:608 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:86289 (84.2 KiB)  TX bytes:86289 (84.2 KiB)
+```
+
+`eht0` is your network interface connected to the network. It might have a different name
+depending on the linux operating system you are using though.
+
+`lo` is your loopback interface which just means it loops back to you (localhost).
+
+
+#### Show sockets
 To see socket statistics on your machine, use the `ss` command. 
 Options of intrest:
 
@@ -104,4 +157,28 @@ Options of intrest:
 ### Process management 
 * `top` - List running processes, or tasks
 * `pkill <name>` - Sends SIGTERM to the specified process, matching the specified name. SIGTERM is a request for a graceful termination. 
+
+
+## Utilities
+
+
+### Vim
+
+Vim can be very daunting when first using it. It is the default editor in 
+linux for many programs so you should know what to do if you are presented with vim
+ex. `(crontab will default with vim when trying to edit the cron)`
+
+To open a file with vim you can type `vim somefile.txt`. 
+
+You are now in the editor and you will notice if you try to type something that it won't write.
+
+This is because vim is listening for commands. In order to type in the text file you must turn it
+to insert mode by pressing the `i` key.
+
+Once you get done making your edits you will need to exit INSERT mode by pressing the `escape` key.
+
+Now to save your edits you will need to access vim's command line. You can do this by pressing 
+the `:` (colon) key. Now type `wq` and ENTER to write (w) and quit(q).
+
+If you need to exit without saving the command is `q!`.
 
