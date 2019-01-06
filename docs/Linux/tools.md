@@ -92,30 +92,6 @@ Other user info commands:
 
 ## System
 
-### Cron
-
-The cron is a way to run programs on an interval. The cron can be configured for each user on the system.
-
-Lets list the cron of every user in the system.
-```bash 
-for user in $(sudo cut -f1 -d: /etc/passwd); do sudo crontab -u $user -l && echo ^$user; done
-```
-
-For a default Install there is no crontabs set up. If there is any added it is because of two reasons:
-
-* It's there for an application to function correctly
-
-Or
-
-*  It's malicious intent.
-
-
-If it's malicious intent then we should remove it from that user.
-
-type `crontab -u [the-user-name] -e`. This will put you into a vim editor. It might be unfamiliar at first.
-
-[read about vim to know how to edit this text file](#vim)
-
 ### Network
 
 #### Interfaces
