@@ -159,6 +159,17 @@ Options of intrest:
 * `pkill <name>` - Sends SIGTERM to the specified process, matching the specified name. SIGTERM is a request for a graceful termination. 
 
 
+### List Services
+
+debian
+```bash
+service --status-all
+```
+
+centOS - excluding iptables so if the firewall has a long list it doesn't blind you.
+```bash
+for service in /etc/init.d/*; do if [[ $(basename $service) != "iptables" ]]; then sudo service $(basename $service) status | grep "is running"; fi; done
+```
 ## Utilities
 
 
