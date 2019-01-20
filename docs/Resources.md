@@ -13,7 +13,10 @@
 
 * [Linux Handbook](http://www.cs.mercer.edu/courses/David%20Cozart/IST%20301/Cyber%20Defense%20Spring%202017/Hardening%20Directives/LinuxGeneralDocumentation-Adams.pdf)
 * [CentOs guide](https://henpeebin.com/kevin/ccdc-2018/state/centos-first-15.pdf)
-* [General Linux Security] (http://www.linuxsecurity.com)
+
+## Windows
+
+* [Active Directory] (https://www.youtube.com/watch?v=piTFGytM1es)
 
 
 ## Resources from brandon
