@@ -17,6 +17,10 @@ All of the following commands are via command prompt
 All of the above commands have a /delete option as well, however it is normally better to disable accounts rather than delete them. This can be accomplished with the following:
 
     Net user [Username] /active{yes|no}
+
+##Disabling default accounts
+
+**Important step**
     
 The built in Administrator and Guest accounts are often insecure, thus disabling them as follows would be desirable.
 
@@ -29,3 +33,17 @@ However, it is important to replace the admin acount with another admin of your 
     Net localgroup Administrators NewAdmin /add
     
 This will add the user "NewAdmin" with password "$eCuR3P@S$W0rd" and then put them in the Administrators group.
+
+##Changing default passwords
+
+**Important step**
+
+For a list of users use:
+
+    Net user
+
+From that list of users one can manually reset a password using
+
+    net user [username] [new password]
+
+
