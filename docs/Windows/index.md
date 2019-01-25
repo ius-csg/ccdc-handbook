@@ -20,9 +20,9 @@
 
 ## Directories
 
-* [Account Managment] (Account Managment.md)
-* [Powershell] (Powershell.md)
-* [Services] (Services/Overview.md)
-* [Tools] (Tools.md)
+* [Account Managment](Account Managment.md)
+* [Powershell](Powershell.md)
+* [Services](Services/Overview.md)
+* [Tools](Tools.md)
 
 

@@ -16,7 +16,7 @@
 
 ## Windows
 
-* [Active Directory] (https://www.youtube.com/watch?v=piTFGytM1es)
+* [Active Directory](https://www.youtube.com/watch?v=piTFGytM1es)
 
 
 ## Resources from brandon
