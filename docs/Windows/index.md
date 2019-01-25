@@ -21,10 +21,8 @@
 ## Directories
 
 * [Account Managment] (Account Managment.md)
-* [Remove the unnecessary] (Remove the unnecessary.md)
-* [Services] (./Services/Overview.md)
-* [Network] (Network.md)
-* [IDS] (IDS.md)
+* [Powershell] (Powershell.md)
+* [Services] (Services/Overview.md)
 * [Tools] (Tools.md)
 
 
