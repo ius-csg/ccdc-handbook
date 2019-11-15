@@ -1,9 +1,5 @@
 # CCDC Handbook
 
-## Next Practice Day
-
-Wednesday December 12th at 5:30pm. in 111A.
-
 ## Current Homework
 
 * Get a Virtual Machine of your OS.
