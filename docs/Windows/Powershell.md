@@ -1,4 +1,4 @@
-##Basics
+# Powershell Basics
 
 Finding out more about any given command
 
@@ -20,12 +20,12 @@ Often a command will give much more output than is desired. If searching for a s
     Get-Service | select Name
 
 
-The above command will first retrive the information about the services, but then will only display the selected attribute, the names.
+The above command will first retrieve the information about the services, but then will only display the selected attribute, the names.
 
-###Discovering the System
+## Discovering the System
 
-####Enviroment Variables
-Enviromental variables can be used to discover many system properties. All enviroment variables are in the form "$env:<identifer>" where <identifier> is the name of the specific variable. A couple of useful enviroment variables are listed below.
+### Environment Variables
+Environment variables can be used to discover many system properties. All environment variables are in the form "$env:<identifer>" where <identifier> is the name of the specific variable. A couple of useful environment variables are listed below.
 
 
     $env:OS
@@ -33,10 +33,10 @@ Enviromental variables can be used to discover many system properties. All envir
     $env:Username
 
 
-There are many other enviroment variables. 
+There are many other environment variables. 
 
-####Processes & Services
-Another point of interest on the system is discovering process and services.This is simple to do in powershell. Get-EventLog requires the name of the log that is to be retrivied (Ex/ Application)
+### Processes & Services
+Another point of interest on the system is discovering process and services.This is simple to do in powershell. Get-EventLog requires the name of the log that is to be retrieved (Ex/ Application)
 
 
     Get-Process
