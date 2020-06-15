@@ -573,27 +573,11 @@
                   <h1>Services</h1>
                 
                 <h3 id="cron">Cron</h3>
-<p>Cron is a simple time based job scheduler. Cron configuation files (crontabs) can be configured for the system, and for indiviual users. User crontabs are usually located at <code>/var/spool/cron/crontab</code>. The position of system crontabs varies, but can usually be found under <code>/etc</code>.</p>
-<p>To list the crontab of every user in the system:</p>
-<pre><code class="bash">for user in $(sudo cut -f1 -d: /etc/passwd); do sudo crontab -u $user -l &amp;&amp; echo ^$user; done
-</code></pre>
-
-<p>Or use the <a href="https://github.com/ius-csg/scripts/blob/master/linux/crontabs.sh">Crontabs script</a> from the scripts repo.</p>
-<p>For a default Install there is no crontabs set up. If there is any added it is because of two reasons:</p>
-<ul>
-<li>It's there for an application to function correctly</li>
-</ul>
-<p>Or</p>
-<ul>
-<li>It's malicious intent.</li>
-</ul>
-<p>If it's malicious intent then we should remove it from that user.</p>
-<p>type <code>crontab -u [the-user-name] -e</code>. This will put you into a vim editor. It might be unfamiliar at first. This allows you to edit the crontab.</p>
-<p>Or, use <code>crontab -u [USERNAME] -r</code> to completely remove it.</p>
+<p>Cron is a simple time based job scheduler. Cron configuration files (crontabs) can be configured for the system, and for individual users. User crontabs are usually located at <code>/var/spool/cron/crontab</code>. The position of system crontabs varies, but can usually be found under <code>/etc</code>.</p>
+<p>It's usually best to stop cron on the entire system using systemd, or sysvinit. </p>
 <p>See also: </p>
 <ul>
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-on-a-vps">DigitalOcean</a></li>
-<li><a href="../tools/#vim">read about vim to know how to edit this text file</a></li>
 </ul>
 <h3 id="apache">Apache</h3>
 <ul>
