@@ -9,7 +9,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
     
     
       
@@ -182,7 +182,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="CCDC Handbook" class="md-nav__link">
+    <a href="../.." class="md-nav__link">
       CCDC Handbook
     </a>
   </li>
@@ -194,7 +194,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Palo-Alto-Firewall/" title="Palo Alto Firewall" class="md-nav__link">
+    <a href="../../Palo-Alto-Firewall/" class="md-nav__link">
       Palo Alto Firewall
     </a>
   </li>
@@ -206,7 +206,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Playbook/" title="Playbook" class="md-nav__link">
+    <a href="../../Playbook/" class="md-nav__link">
       Playbook
     </a>
   </li>
@@ -218,7 +218,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Resources/" title="Resources" class="md-nav__link">
+    <a href="../../Resources/" class="md-nav__link">
       Resources
     </a>
   </li>
@@ -266,7 +266,7 @@
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Centos Web Server" class="md-nav__link md-nav__link--active">
+    <a href="./" class="md-nav__link md-nav__link--active">
       Centos Web Server
     </a>
     
@@ -303,7 +303,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Fedora-Email/" title="Fedora Email" class="md-nav__link">
+    <a href="../Fedora-Email/" class="md-nav__link">
       Fedora Email
     </a>
   </li>
@@ -315,7 +315,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Ubuntu-DNS/" title="Ubuntu DNS" class="md-nav__link">
+    <a href="../Ubuntu-DNS/" class="md-nav__link">
       Ubuntu DNS
     </a>
   </li>
@@ -327,7 +327,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Windows-AD/" title="Windows 2008R2 AD" class="md-nav__link">
+    <a href="../Windows-AD/" class="md-nav__link">
       Windows 2008R2 AD
     </a>
   </li>
@@ -365,7 +365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Linux/" title="Index" class="md-nav__link">
+    <a href="../../Linux/" class="md-nav__link">
       Index
     </a>
   </li>
@@ -377,7 +377,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Linux/services/" title="Services" class="md-nav__link">
+    <a href="../../Linux/services/" class="md-nav__link">
       Services
     </a>
   </li>
@@ -389,7 +389,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Linux/tools/" title="Linux Tools" class="md-nav__link">
+    <a href="../../Linux/tools/" class="md-nav__link">
       Linux Tools
     </a>
   </li>
@@ -427,7 +427,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Windows/" title="Index" class="md-nav__link">
+    <a href="../../Windows/" class="md-nav__link">
       Index
     </a>
   </li>
@@ -439,7 +439,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Windows/Local%20accounts/" title="Local Account Management" class="md-nav__link">
+    <a href="../../Windows/Local%20accounts/" class="md-nav__link">
       Local Account Management
     </a>
   </li>
@@ -451,7 +451,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Windows/Powershell/" title="Powershell Basics" class="md-nav__link">
+    <a href="../../Windows/Powershell/" class="md-nav__link">
       Powershell Basics
     </a>
   </li>
@@ -463,7 +463,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Windows/Remote-Access/" title="Disabling Remote Access" class="md-nav__link">
+    <a href="../../Windows/Remote-Access/" class="md-nav__link">
       Disabling Remote Access
     </a>
   </li>
@@ -475,7 +475,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Windows/Tools/" title="Tools" class="md-nav__link">
+    <a href="../../Windows/Tools/" class="md-nav__link">
       Tools
     </a>
   </li>
@@ -540,7 +540,7 @@
     </embed>
 </object></p>
 <h2 id="list-services-without-iptables">List Services without iptables</h2>
-<pre><code class="bash">for service in /etc/init.d/*; do if [[ $(basename $service) != &quot;iptables&quot; ]]; then sudo service $(basename $service) status; fi; done
+<pre><code class="language-bash">for service in /etc/init.d/*; do if [[ $(basename $service) != &quot;iptables&quot; ]]; then sudo service $(basename $service) status; fi; done
 </code></pre>
                 
               
@@ -560,7 +560,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../Resources/" title="Resources" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../Resources/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -575,7 +575,7 @@
           </a>
         
         
-          <a href="../Fedora-Email/" title="Fedora Email" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Fedora-Email/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
@@ -609,7 +609,7 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

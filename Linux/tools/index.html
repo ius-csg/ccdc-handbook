@@ -9,7 +9,7 @@
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
     
     
       
@@ -182,7 +182,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="CCDC Handbook" class="md-nav__link">
+    <a href="../.." class="md-nav__link">
       CCDC Handbook
     </a>
   </li>
@@ -194,7 +194,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Palo-Alto-Firewall/" title="Palo Alto Firewall" class="md-nav__link">
+    <a href="../../Palo-Alto-Firewall/" class="md-nav__link">
       Palo Alto Firewall
     </a>
   </li>
@@ -206,7 +206,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Playbook/" title="Playbook" class="md-nav__link">
+    <a href="../../Playbook/" class="md-nav__link">
       Playbook
     </a>
   </li>
@@ -218,7 +218,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Resources/" title="Resources" class="md-nav__link">
+    <a href="../../Resources/" class="md-nav__link">
       Resources
     </a>
   </li>
@@ -251,7 +251,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Boxes/Centos-Web-Server/" title="Centos Web Server" class="md-nav__link">
+    <a href="../../Boxes/Centos-Web-Server/" class="md-nav__link">
       Centos Web Server
     </a>
   </li>
@@ -263,7 +263,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Boxes/Fedora-Email/" title="Fedora Email" class="md-nav__link">
+    <a href="../../Boxes/Fedora-Email/" class="md-nav__link">
       Fedora Email
     </a>
   </li>
@@ -275,7 +275,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Boxes/Ubuntu-DNS/" title="Ubuntu DNS" class="md-nav__link">
+    <a href="../../Boxes/Ubuntu-DNS/" class="md-nav__link">
       Ubuntu DNS
     </a>
   </li>
@@ -287,7 +287,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Boxes/Windows-AD/" title="Windows 2008R2 AD" class="md-nav__link">
+    <a href="../../Boxes/Windows-AD/" class="md-nav__link">
       Windows 2008R2 AD
     </a>
   </li>
@@ -327,7 +327,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Index" class="md-nav__link">
+    <a href="../" class="md-nav__link">
       Index
     </a>
   </li>
@@ -339,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../services/" title="Services" class="md-nav__link">
+    <a href="../services/" class="md-nav__link">
       Services
     </a>
   </li>
@@ -364,7 +364,7 @@
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Linux Tools" class="md-nav__link md-nav__link--active">
+    <a href="./" class="md-nav__link md-nav__link--active">
       Linux Tools
     </a>
     
@@ -575,7 +575,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Windows/" title="Index" class="md-nav__link">
+    <a href="../../Windows/" class="md-nav__link">
       Index
     </a>
   </li>
@@ -587,7 +587,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Windows/Local%20accounts/" title="Local Account Management" class="md-nav__link">
+    <a href="../../Windows/Local%20accounts/" class="md-nav__link">
       Local Account Management
     </a>
   </li>
@@ -599,7 +599,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Windows/Powershell/" title="Powershell Basics" class="md-nav__link">
+    <a href="../../Windows/Powershell/" class="md-nav__link">
       Powershell Basics
     </a>
   </li>
@@ -611,7 +611,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Windows/Remote-Access/" title="Disabling Remote Access" class="md-nav__link">
+    <a href="../../Windows/Remote-Access/" class="md-nav__link">
       Disabling Remote Access
     </a>
   </li>
@@ -623,7 +623,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Windows/Tools/" title="Tools" class="md-nav__link">
+    <a href="../../Windows/Tools/" class="md-nav__link">
       Tools
     </a>
   </li>
@@ -906,7 +906,6 @@ lo        Link encap:Local Loopback
           collisions:0 txqueuelen:0
           RX bytes:86289 (84.2 KiB)  TX bytes:86289 (84.2 KiB)
 </code></pre>
-
 <p><code>eht0</code> is your network interface connected to the network. It might have a different name
 depending on the linux operating system you are using though.</p>
 <p><code>lo</code> is your loopback interface which just means it loops back to you (localhost).</p>
@@ -924,13 +923,11 @@ Options of intrest:</p>
 </ul>
 <h3 id="list-services">List Services</h3>
 <p>debian</p>
-<pre><code class="bash">service --status-all
+<pre><code class="language-bash">service --status-all
 </code></pre>
-
 <p>centOS - excluding iptables so if the firewall has a long list it doesn't blind you.</p>
-<pre><code class="bash">for service in /etc/init.d/*; do if [[ $(basename $service) != &quot;iptables&quot; ]]; then sudo service $(basename $service) status | grep &quot;is running&quot;; fi; done
+<pre><code class="language-bash">for service in /etc/init.d/*; do if [[ $(basename $service) != &quot;iptables&quot; ]]; then sudo service $(basename $service) status | grep &quot;is running&quot;; fi; done
 </code></pre>
-
 <h2 id="utilities">Utilities</h2>
 <h3 id="vim">Vim</h3>
 <p>Vim can be very daunting when first using it. It is the default editor in 
@@ -962,7 +959,7 @@ the <code>:</code> (colon) key. Now type <code>wq</code> and ENTER to write (w) 
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../services/" title="Services" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../services/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -977,7 +974,7 @@ the <code>:</code> (colon) key. Now type <code>wq</code> and ENTER to write (w) 
           </a>
         
         
-          <a href="../../Windows/" title="Index" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Windows/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
@@ -1011,7 +1008,7 @@ the <code>:</code> (colon) key. Now type <code>wq</code> and ENTER to write (w) 
     </div>
     
       <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
