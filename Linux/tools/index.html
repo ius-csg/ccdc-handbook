@@ -832,26 +832,26 @@
                 <h1 id="linux-tools">Linux Tools</h1>
 <h2 id="firewall">Firewall</h2>
 <h4 id="ufw">UFW</h4>
-<p>UFW (Uncomplicated FireWall) is a simple wrapper for the Linux kernel's iptables firewall. 
-To enable the firewall: <code>ufw enable</code> <strong>DANGER: By default, this will block ALL incoming traffic
+<p>UFW (Uncomplicated FireWall) is a simple wrapper for the Linux kernel's iptables firewall. <br />
+To enable the firewall: <code>ufw enable</code> <strong>DANGER: By default, this will block ALL incoming traffic<br />
  unless otherwise configured!</strong></p>
 <p>To allow SSH: <code>ufw allow ssh</code> OR <code>ufw allow in 22/tcp</code></p>
 <p>In general, the syntax is <code>ufw allow|deny|reject in|out port|app/tcp|udp</code></p>
 <p>To list current rules: <code>ufw status verbose</code></p>
 <p>To deny an IP or range to all ports: <code>ufw deny from IP/CIDR</code></p>
-<p>See also:
+<p>See also:<br />
 <a href="https://wiki.archlinux.org/index.php/Uncomplicated_Firewall">ArchWiki</a></p>
 <h3 id="iptables">IPtables</h3>
-<p>IPtables is the Linux kernel's built in firewall. While more complex, it offers more 
-features than a front-end and is found on all Linux systems. Please try to use UFW, 
+<p>IPtables is the Linux kernel's built in firewall. While more complex, it offers more <br />
+features than a front-end and is found on all Linux systems. Please try to use UFW, <br />
 detailed in the above section, if possible.</p>
 <p>To view current IPtables rules: <code>iptables -nvL</code></p>
-<p>To give an example of output information, <code>Chain INPUT (policy ACCEPT 0 packets, 0 bytes)</code>
+<p>To give an example of output information, <code>Chain INPUT (policy ACCEPT 0 packets, 0 bytes)</code><br />
 indicates that by default, all INPUT data (incoming) will be ACCEPTed. </p>
 <p>To change the Chain default: <code>iptables -P &lt;CHAIN&gt; &lt;ACCEPT|REJECT|DROP&gt;</code></p>
 <p>To allow SSH traffic over TCP port 22: <code>iptables -A INPUT -p tcp --dport 22 -j ACCEPT</code></p>
 <p>By default, rules are not preserved on system reboot.</p>
-<p>See also:
+<p>See also:<br />
 <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-using-iptables-on-ubuntu-14-04">DigitalOcean</a></p>
 <h2 id="security">Security</h2>
 <h3 id="lynis">Lynis</h3>
@@ -859,7 +859,7 @@ indicates that by default, all INPUT data (incoming) will be ACCEPTed. </p>
 <p>A custom auditing profile can be found in the scripts repo, but is not required.</p>
 <h3 id="rkhunter">RKhunter</h3>
 <p>RKhunter is a Linux rootkit and backdoor scanner avalible in most repos. It checks for known backdoors, wrong file permissions, and checksums some binaries.</p>
-<p>To run all checks (requires root): <code>rkhunter --check</code>
+<p>To run all checks (requires root): <code>rkhunter --check</code><br />
 By default, the output is logged at <code>/var/log/rkhunter.log</code></p>
 <p>See also: </p>
 <ul>
@@ -906,11 +906,11 @@ lo        Link encap:Local Loopback
           collisions:0 txqueuelen:0
           RX bytes:86289 (84.2 KiB)  TX bytes:86289 (84.2 KiB)
 </code></pre>
-<p><code>eht0</code> is your network interface connected to the network. It might have a different name
+<p><code>eht0</code> is your network interface connected to the network. It might have a different name<br />
 depending on the linux operating system you are using though.</p>
 <p><code>lo</code> is your loopback interface which just means it loops back to you (localhost).</p>
 <h4 id="show-sockets">Show sockets</h4>
-<p>To see socket statistics on your machine, use the <code>ss</code> command. 
+<p>To see socket statistics on your machine, use the <code>ss</code> command. <br />
 Options of intrest:</p>
 <ul>
 <li><code>ss -lp</code> - Shows all listening ports and the process listening</li>
@@ -930,15 +930,15 @@ Options of intrest:</p>
 </code></pre>
 <h2 id="utilities">Utilities</h2>
 <h3 id="vim">Vim</h3>
-<p>Vim can be very daunting when first using it. It is the default editor in 
-linux for many programs so you should know what to do if you are presented with vim
+<p>Vim can be very daunting when first using it. It is the default editor in <br />
+linux for many programs so you should know what to do if you are presented with vim<br />
 ex. <code>(crontab will default with vim when trying to edit the cron)</code></p>
 <p>To open a file with vim you can type <code>vim somefile.txt</code>. </p>
 <p>You are now in the editor and you will notice if you try to type something that it won't write.</p>
-<p>This is because vim is listening for commands. In order to type in the text file you must turn it
+<p>This is because vim is listening for commands. In order to type in the text file you must turn it<br />
 to insert mode by pressing the <code>i</code> key.</p>
 <p>Once you get done making your edits you will need to exit INSERT mode by pressing the <code>escape</code> key.</p>
-<p>Now to save your edits you will need to access vim's command line. You can do this by pressing 
+<p>Now to save your edits you will need to access vim's command line. You can do this by pressing <br />
 the <code>:</code> (colon) key. Now type <code>wq</code> and ENTER to write (w) and quit(q).</p>
 <p>If you need to exit without saving the command is <code>q!</code>.</p>
                 
