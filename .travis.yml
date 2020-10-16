@@ -1,5 +1,6 @@
 
 language: python
+cache: pip
 install:
 - pip install mkdocs
 - pip install mkdocs-material
