@@ -2,11 +2,9 @@
 
 ## Current Homework
 
-* Get a Virtual Machine of your OS.
+* Get an account with [CSLabs](https://iuscsg.org/cslabs).
 
 ## Things to know how to do on your box
-
-#### Know how to get System information 
 - What is your system/name?
 - What is the version?
 - Who are the users are on the machine right now?
@@ -21,9 +19,9 @@
 
 ![roles](assets/ccdc-roles.png)
 
-* Team Captain
-* Firewall Admin
-* Linux Web Admin
+* Team Captain - Adam Isaac
+* Firewall Admin - Zac Clifton
+* Linux Web Admin - Adam Isaac
 * Linux Splunk Admin
 * Windows Active Directory Admin
 * Linux Mail Admin
