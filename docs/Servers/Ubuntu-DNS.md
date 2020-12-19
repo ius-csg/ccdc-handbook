@@ -14,6 +14,3 @@ Default ports:
 * [Archwiki - BIND](https://wiki.archlinux.org/index.php/BIND)
 * [BIND Ubunutu setup - DO](https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-private-network-dns-server-on-ubuntu-14-04)
 
-## MySQL
-
-A SQL server will also likely be present for use on the eCommerce/CentOS box. 
