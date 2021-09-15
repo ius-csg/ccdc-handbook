@@ -2,7 +2,7 @@
 
 ## Current Homework
 
-* Get an account with [CSLabs](https://iuscsg.org/cslabs).
+* Learn about the rules of competition, and explore your possible roles
 
 ## Things to know how to do on your box
 - What is your system/name?
@@ -19,17 +19,21 @@
 
 ![roles](assets/ccdc-roles.png)
 
-* Team Captain - Adam Isaac
-* Firewall Admin - Zac Clifton
-* Linux Web Admin - Adam Isaac
-* Linux Splunk Admin
+* Team Captain
+* Firewall Admin
+* Splunk Admin
+* CentOS Ecomm Admin
 * Windows Active Directory Admin
-* Linux Mail Admin
-* Linux Database Admin
+* Fedora Mail Admin
 * Inject Writier 
 * Incident Responder
 (Ranked in order of difficulty)
-## Schedule
 
-### To be determined
+### New Positions 
+We don't yet know the difficulty of these positions:
+* Windows Docker Admin
+* Debian DNS/NTP Admin
+* Ubuntu Web Admin
+## Schedule
+* Meeting 1 - 9/17/21 @6PM
 
